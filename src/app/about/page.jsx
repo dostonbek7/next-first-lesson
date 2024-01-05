@@ -13,6 +13,7 @@ async function getData(){
   return (
     <div className="min-h-screen flex items-center justify-center flex-col gap-10">
       <h1 className="text-3xl">About</h1>
+      <Link className="px-5 py-3 bg-green-500 text-white rounded-md" href="/">⬅ Home page</Link>
       <ul className="flex flex-col items-center gap-3 overflow-y-scroll max-w-[1000px] h-[400px] p-8">
         {data.map(todo =>{
         const {id, title, completed} = todo
